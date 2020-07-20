@@ -193,7 +193,7 @@ MyApplet.prototype = {
     },
 
     // reads system clock setting to apply "24h" and "seconds" setting to this applet
-    _updateFormatString() {
+    _updateFormatString: function() {
         if (this.use_custom_format) {
             this._dateFormat = this.custom_format;
         } else {
