@@ -364,7 +364,7 @@ Calendar.prototype = {
     _update: function(forceReload) {
         let now = new Date();
 
-        this._monthLabel.text = this._selectedDate.toLocaleFormat('%B').capitalize();
+        this._monthLabel.text = this._selectedDate.toLocaleFormat('%B');
         this._yearLabel.text = this._selectedDate.toLocaleFormat('%Y');
 
         // Remove everything but the topBox and the weekday labels
